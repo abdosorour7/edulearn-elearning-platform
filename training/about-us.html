@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Transform Your Future Through Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel = "stylesheet" href="./css/about_us_style.css" >
+    <link rel = "stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    
+      <!--Header-->
+
+   <header>
+  <nav>
+      <div class="logo">EduLearn</div>
+
+      <!-- Hamburger menu button -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+      </button>
+
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="AddCourse.html" id="add-course-btn" style="display: none;">Add course</a></li>
+          <!--Get started default version-->
+          <li class="mobile-cta"><a href="Auth/sign up.html" class="nav-cta">Get Started</a></li>
+      </ul>
+
+      <!-- Get started mobile responsive version-->
+      <a href="Auth/sign up.html" class="nav-cta desktop-cta">Get Started</a>
+  </nav>
+</header>
+
+
+    <main>
+         <section class="mission-vision-section">
+            <div class="container">
+                <!-- An optional title for the whole section -->
+                <h2 class="section-title">What We Are All About</h2>
+                
+                <div class="principles-grid">
+                    <!-- Card 1: Vision -->
+                    <div class="principle-card">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <h3>Our Vision</h3>
+                        <p>To create a world where anyone, anywhere has the power to be the best in their own way.</p>
+                    </div>
+
+                    <!-- Card 2: Mission -->
+                    <div class="principle-card">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <h3>Our Mission</h3>
+                        <p>To provide flexible, affordable , and job-relevant online learning from world-class educators and companies.</p>
+                    </div>
+
+                    <!-- Card 3: Origin -->
+                    <div class="principle-card">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h3>Our Origin</h3>
+                        <p>Founded by a group of friends as a place where help is not asked for but given with a smile.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- Stats Section -->
+<section class="stats-section">
+    <!-- Decorative background shapes -->
+    <div class="background-shape shape-wave"></div>
+    
+    <div class="container">
+        <div class="stats-grid">
+            <!-- Stat Item 1: Certificates -->
+            <div class="stat-item">
+                <i class="fa-solid fa-award"></i>
+                <span class="stat-number" data-goal="1240">0</span>
+                <p class="stat-label">Certificates</p>
+            </div>
+
+            <!-- Stat Item 2: Benefited Students -->
+            <div class="stat-item">
+                <i class="fa-solid fa-brain"></i>
+                <span class="stat-number" data-goal="2127">0</span>
+                <p class="stat-label">Benefited Students</p>
+            </div>
+
+            <!-- Stat Item 3: Online Learners -->
+            <div class="stat-item">
+                <i class="fa-solid fa-users"></i>
+                <span class="stat-number" data-goal="1512">0</span>
+                <p class="stat-label">Online Learners</p>
+            </div>
+
+            <!-- Stat Item 4: Unique Partners -->
+            <div class="stat-item">
+                <i class="fa-solid fa-handshake"></i>
+                <span class="stat-number" data-goal="95">0</span>
+                <p class="stat-label">Unique Partners</p>
+            </div>
+            
+            <!-- Stat Item 5: Certified Tutors -->
+            <div class="stat-item">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span class="stat-number" data-goal="250">0</span>
+                <p class="stat-label">Certified Tutors</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================= INTERACTIVE MAP SECTION ======================= -->
+<section class="map-section">
+    <div class="container">
+        <h2>Our Global Community</h2>
+        <p class="map-subtitle">We're proud to have learners from all over the world!</p>
+        <div id="student-map"></div>
+    </div>
+</section>
+
+<!-- ======================= TIMELINE SECTION ======================= -->
+<section class="timeline-section">
+    <div class="container">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2021</h3>
+                    <p>Launched the site with our friends, planting the seed for a new way to learn online.</p>
+                </div>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2022</h3>
+                    <p>Officially launched to the public with our first 10 expert-led courses.</p>
+                </div>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2023</h3>
+                    <p>A huge milestone! We celebrated reaching a community of 10,000 passionate students.</p>
+                </div>
+            </div>
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2024</h3>
+                    <p>Innovating further by introducing interactive workshops with industry professionals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="logo">
+            <i class='bx bx-book-open'></i>
+            <span>EduLearn</span>
+          </div>
+          <p>Transform your future with our comprehensive online learning platform. Master new skills and advance your career.</p>
+          <div class="social-links">
+            <a href="http://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+            <a href="http://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+            <a href="http://www.instgram.com"><i class='bx bxl-instagram'></i></a>
+            <a href="http://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about-us.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p><i class='bx bx-envelope'></i> support@edulearn.com</p>
+          <p><i class='bx bx-phone'></i> +02 81375734</p>
+          <p><i class='bx bx-map'></i> Al Abbasya, Cairo</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLearn. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- links to js files -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="./js/about_us.js"></script> 
+  <script src="./js/main.js"></script>
+  <script src="Auth/auth-final.js"></script>
+  
+      
+</body>
+
+
+</html>
