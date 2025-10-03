@@ -1,0 +1,65 @@
+/* ====================================
+    PRIVACY POLICY PAGE STYLES
+   ==================================== */
+
+:root {
+    --dark-blue: #2C3E50;
+}
+
+body {
+    background-color: #f8faff; 
+}
+
+/* 
+  Main container for the policy text.
+*/
+.policy-page-container {
+    max-width: 800px;          
+    margin: 0 auto;      
+    padding: 120px 2rem 5rem 2rem; 
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.policy-page-container h1 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.policy-page-container .last-updated {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 3rem;
+}
+
+.policy-page-container h2 {
+    font-size: 1.6rem;
+    color: var(--dark-blue);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e1e5f2;
+}
+
+.policy-page-container p,
+.policy-page-container li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.policy-page-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 1rem;
+}
+
+.policy-page-container a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}

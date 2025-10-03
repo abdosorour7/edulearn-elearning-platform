@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Transform Your Future Through Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/homestyle.css">
+    <link rel = "stylesheet" href="./css/main.css">
+    
+</head>
+
+<body>
+
+   <!--Header-->
+
+   <header>
+  <nav>
+      <div class="logo">EduLearn</div>
+
+      <!-- Hamburger menu button -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+      </button>
+
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="AddCourse.html" id="add-course-btn" style="display: none;">Add course</a></li>
+          <!--Get started default version-->
+          <li class="mobile-cta"><a href="Auth/sign up.html" class="nav-cta">Get Started</a></li>
+      </ul>
+
+      <!-- Get started mobile responsive version-->
+      <a href="Auth/sign up.html" class="nav-cta desktop-cta">Get Started</a>
+  </nav>
+</header>
+
+      
+
+    <section class="hero" id="home">
+        <div class="slider">
+            <div class="slide">
+                <div class="hero-content">
+                    <h1>Learn Anytime, Anywhere</h1>
+                    <p>Join thousands of students worldwide and access expert-led courses that transform your career and future.</p>
+                    <div class="hero-buttons">
+                        <a href="#courses" class="cta-button">Start Learning Now</a>
+                        <a href="#instructor" class="cta-button secondary">Become an Instructor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h1>Master New Skills</h1>
+                    <p>Explore cutting-edge courses designed by industry experts to accelerate your professional growth.</p>
+                    <div class="hero-buttons">
+                        <a href="#courses" class="cta-button">Explore Courses</a>
+                        <a href="#about-us" class="cta-button secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h1>Flexible Learning</h1>
+                    <p>Study at your own pace with lifetime access to premium content and a supportive learning community.</p>
+                    <div class="hero-buttons">
+                        <a href="#courses" class="cta-button">Get Started</a>
+                        <a href="#contact" class="cta-button secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="active" onclick="currentSlide(1)"></button>
+            <button onclick="currentSlide(2)"></button>
+            <button onclick="currentSlide(3)"></button>
+        </div>
+    </section>
+
+    <section class="features fade-in-on-scroll" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose EduLearn?</h2>
+                <p>We provide the best online learning experience with cutting-edge technology and expert instructors.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Always Updated</h3>
+                    <p>Stay current with regularly updated courses that reflect the latest industry trends and technologies.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals with years of real-world experience and proven teaching methods.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certified Learning</h3>
+                    <p>Earn industry-recognized certificates upon completion to validate your skills and boost your career.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Learn at Your Pace</h3>
+                    <p>Access courses anytime, anywhere with our flexible learning platform and mobile apps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories fade-in-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore Categories</h2>
+                <p>Discover our comprehensive range of courses across multiple disciplines and skill levels.</p>
+            </div>
+            <div class="categories-nav">
+                <a href="#" class="category active" onclick="filterCourses('all')">All Categories</a>
+                <a href="#" class="category" onclick="filterCourses('web')">Web Development</a>
+                <a href="#" class="category" onclick="filterCourses('data')">Data Science</a>
+                <a href="#" class="category" onclick="filterCourses('design')">Graphic Design</a>
+                <a href="#" class="category" onclick="filterCourses('marketing')">Digital Marketing</a>
+                <a href="#" class="category" onclick="filterCourses('business')">Business</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses fade-in-on-scroll" id="courses">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Courses</h2>
+                <p>Discover our most popular courses designed to help you achieve your career goals.</p>
+            </div>
+            <div class="course-grid">
+                <div class="course-card" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Web Development">
+                    <div class="course-card-content">
+                        <h3>Complete Web Development Bootcamp</h3>
+                        <p>Master HTML, CSS, JavaScript, React, Node.js, and more in this comprehensive full-stack development course.</p>
+                        <a href="course-details.html?id=1" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="course-card" data-category="data">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Data Science">
+                    <div class="course-card-content">
+                        <h3>Data Science & Machine Learning</h3>
+                        <p>Learn Python, statistics, machine learning algorithms, and data visualization from industry experts.</p>
+                        <a href="course-details.html?id=2" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="course-card" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Graphic Design">
+                    <div class="course-card-content">
+                        <h3>Master Graphic Design</h3>
+                        <p>Create stunning visual designs using Adobe Creative Suite, design principles, and modern techniques.</p>
+                        <a href="course-details.html?id=3" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us fade-in-on-scroll" id="about-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>About EduLearn</h2>
+                <p>We are dedicated to providing top-quality education to learners worldwide, empowering them with skills for a brighter future. Our platform connects you with expert instructors and a supportive learning community.</p>
+            </div>
+            <a href="about-us.html" class="cta-button">Learn More About Us</a>
+        </div>
+    </section>
+
+    <section class="testimonials fade-in-on-scroll" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Students Say</h2>
+                <p>Read reviews from thousands of students who have transformed their careers with EduLearn.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Ahmed Mohamed">
+                    <div class="rating">★★★★★</div>
+                    <p>"EduLearn completely transformed my career path. The web development course was comprehensive and the instructors were incredibly supportive. I landed my dream job just 3 months after completing the course!"</p>
+                    <h4>Ahmed Mohamed</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Ali">
+                    <div class="rating">★★★★★</div>
+                    <p>"The flexible learning approach helped me balance my studies with work perfectly. The data science program exceeded all my expectations with hands-on projects and real-world applications."</p>
+                    <h4>Sarah Ali</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="John Davis">
+                    <div class="rating">★★★★★</div>
+                    <p>"As someone with no design background, the UI/UX course was perfect for me. The step-by-step approach and practical assignments made learning enjoyable and highly effective."</p>
+                    <h4>John Davis</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instructor-cta fade-in-on-scroll" id="instructor">
+        <div class="container">
+            <h2>Become an Instructor</h2>
+            <p>Share your expertise with millions of students worldwide and earn money teaching what you love. Join our community of expert educators.</p>
+            <a href="instructor-signup.html" class="cta-button">Start Teaching Today</a>
+        </div>
+    </section>
+
+    <section class="newsletter fade-in-on-scroll">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter and never miss out on new courses, exclusive offers, and learning tips!</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+   
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="logo">
+            <i class='bx bx-book-open'></i>
+            <span>EduLearn</span>
+          </div>
+          <p>Transform your future with our comprehensive online learning platform. Master new skills and advance your career.</p>
+          <div class="social-links">
+            <a href="http://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+            <a href="http://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+            <a href="http://www.instgram.com"><i class='bx bxl-instagram'></i></a>
+            <a href="http://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about-us.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p><i class='bx bx-envelope'></i> support@edulearn.com</p>
+          <p><i class='bx bx-phone'></i> +02 81375734</p>
+          <p><i class='bx bx-map'></i> Al Abbasya, Cairo</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLearn. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+    <button class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- link to the page's js file-->
+
+    <script src="./js/homejs.js"></script>
+
+    <!-- link to complementing js files-->
+    <script src="./js/main.js"></script>
+    <script src="Auth/auth-final.js"></script>
+    
+</body>
+
+</html>

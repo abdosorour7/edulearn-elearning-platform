@@ -1,0 +1,113 @@
+/* ====================================
+    FEATURES PAGE STYLES
+   ==================================== */
+
+:root {
+    --dark-blue: #2C3E50;
+    --bright-blue: #3498DB;
+    --teal: #1abc9c;
+    --purple: #9b59b6;
+}
+
+/* --- The Animated Aurora Background --- */
+body {
+    background: linear-gradient(125deg, var(--dark-blue), var(--bright-blue), var(--teal), var(--purple));
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* --- Main Page Wrapper & Hero Section --- */
+.features-page {
+    padding-top: 120px; 
+    padding-bottom: 5rem;
+}
+
+.features-hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+    padding: 0 2rem;
+}
+
+.features-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.features-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* --- The Features Grid --- */
+.features-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- The Glassmorphism "Quirky" Card --- */
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .features-hero h1 {
+        font-size: 2.5rem;
+    }
+    .features-page {
+        padding-top: 100px;
+    }
+}

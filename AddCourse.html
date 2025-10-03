@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduLearn Admin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/AddCourse.css">
+  <link rel = "stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<!--Header-->
+
+   <header>
+  <nav>
+      <div class="logo">EduLearn</div>
+
+      <!-- Hamburger menu button -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+      </button>
+
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="AddCourse.html" id="add-course-btn" style="display: none;">Add course</a></li>
+          <!--Get started default version-->
+          <li class="mobile-cta"><a href="Auth/sign up.html" class="nav-cta">Get Started</a></li>
+      </ul>
+
+      <!-- Get started mobile responsive version-->
+      <a href="Auth/sign up.html" class="nav-cta desktop-cta">Get Started</a>
+  </nav>
+</header>
+
+
+  <div class="course-list">
+    <h2>Add New Course</h2>
+    <form id="courseForm">
+      <label for="courseName">Course Name</label>
+      <input type="text" id="courseName" name="courseName" placeholder="Enter course name">
+
+      <label for="coursePrice">Course Price ($)</label>
+      <input type="number" id="coursePrice" name="coursePrice" placeholder="Enter course price">
+
+      <label for="courseDescription">Course Description</label>
+      <textarea id="courseDescription" name="courseDescription" placeholder="Enter course description"></textarea>
+
+      <label for="courseImage">Course Image</label>
+      <input type="file" id="courseImage" name="courseImage" accept="image/*">
+
+      <button class="btn" type="submit">Add Course</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="logo">
+            <i class='bx bx-book-open'></i>
+            <span>EduLearn</span>
+          </div>
+          <p>Transform your future with our comprehensive online learning platform. Master new skills and advance your career.</p>
+          <div class="social-links">
+            <a href="http://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+            <a href="http://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+            <a href="http://www.instgram.com"><i class='bx bxl-instagram'></i></a>
+            <a href="http://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about-us.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p><i class='bx bx-envelope'></i> support@edulearn.com</p>
+          <p><i class='bx bx-phone'></i> +02 81375734</p>
+          <p><i class='bx bx-map'></i> Al Abbasya, Cairo</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLearn. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- links to js files -->
+  <script src="./js/add_course.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/course-manager.js"></script>
+  <script src="Auth/auth-final.js"></script>
+  
+
+
+</body>
+</html>
