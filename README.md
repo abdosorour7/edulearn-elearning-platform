@@ -35,11 +35,6 @@ It simulates the structure and functionality of an e-learning platform while sho
 
 ---
 
-## 📸 Screenshots
-*(Add screenshots of your site here for better presentation – e.g. Home page, Courses page, Login form, etc.)*
-
----
-
 ## 🚀 Live Preview
 🔗 **Try it out here:** [EduLearn on GitHub Pages](https://abdosorour7.github.io/edulearn-elearning-platform/)
 
